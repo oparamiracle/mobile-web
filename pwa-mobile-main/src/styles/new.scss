@@ -1,0 +1,338 @@
+@import "./variables";
+
+.styles-content {
+  height: 120vh;
+  width: 80%;
+  padding: 2rem;
+  background: whitesmoke;
+  position: relative;
+  .first-circle {
+    width: 50px;
+    height: 50px;
+    left: 10rem;
+    top: 6rem;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+  }
+  .circle-grad {
+    position: absolute;
+    // right: 15rem;
+    left: 17rem;
+    width: 50rem;
+    height: 50rem;
+    border-radius: 50%;
+    background: linear-gradient(rgb(8, 8, 8), rgb(248, 247, 247), whitesmoke);
+  }
+  .card-1 {
+    padding: 2rem 1rem;
+    position: absolute;
+    height: 80vh;
+    width: 30%;
+    left: 2rem;
+    bottom: 3rem;
+    border-radius: 15px;
+    background: #000;
+    .nav {
+      &-link {
+        color: $light;
+        font-size: 0.8rem;
+        padding-left: 0;
+        //padding: 1rem 2rem;
+        font-weight: 400;
+        overflow: hidden !important;
+
+        i {
+          margin-right: 1rem;
+        }
+      }
+
+      .active {
+        background-color: #4a4a4a;
+        display: inline;
+        border-radius: 10px;
+      }
+
+      .horizontal-line {
+        height: 0.1rem;
+        width: 60%;
+        background-color: $light;
+      }
+    }
+  }
+  .card-2 {
+    position: absolute;
+    height: max-content;
+    width: 30%;
+    border-radius: 15px;
+    background: white;
+    left: 28rem;
+    top: 9rem;
+    .checkout-page_header {
+      display: flex;
+      border-radius: 15px;
+      padding: 0.5rem 1rem;
+      width: 100%;
+      background-color: $light;
+      align-items: center;
+      p {
+        flex: 1;
+        margin-bottom: 0;
+      }
+      button {
+        all: unset;
+      }
+    }
+
+    .payment-section {
+      padding: 0 1rem;
+      .payment-row {
+        .left-hand-side {
+          .icon-box {
+            width: 1.5rem;
+            border-radius: 10px;
+            margin-right: 1rem;
+            height: 1.5rem;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 1rem;
+              height: 0.6rem;
+            }
+          }
+          span {
+            font-weight: 700;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .hold {
+      padding: 0 1rem;
+      .credit-card {
+        background-color: $primary;
+        color: $light;
+        border-radius: 20px;
+        padding: 1rem 1rem;
+        margin-bottom: 1rem;
+        p {
+          font-size: 12px;
+          font-weight: 500;
+          margin-bottom: 0;
+        }
+
+        .card-information {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          img {
+            width: 2rem;
+            height: 1rem;
+          }
+        }
+      }
+    }
+
+    .shipping-information {
+      padding: 0 1rem;
+      .title {
+        font-weight: 700;
+      }
+      a {
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: none;
+        color: $primary;
+        font-size: 11px;
+      }
+      small {
+        font-weight: 500;
+        font-size: 11px;
+      }
+    }
+
+    .total {
+      padding: 0 1rem;
+      display: flex;
+      justify-content: space-between;
+      p {
+        font-weight: 700;
+      }
+    }
+
+    .proceed-payment {
+      background-color: $primary;
+      color: $light;
+      width: 100%;
+      border-radius: 0 0 15px 15px;
+
+      //min-height: 1rem;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+
+      padding: 1rem 1rem;
+      .text-center {
+        display: flex;
+        justify-content: center;
+        div {
+          width: 40%;
+          height: 3px;
+          background: $light;
+        }
+      }
+    }
+  }
+  .card-3 {
+    position: absolute;
+    // padding: 2rem 1rem;
+    height: max-content;
+    width: 30%;
+    border-radius: 15px;
+    background: $light;
+    right: 2rem;
+    top: 1rem;
+    .checkout-page_header {
+      display: flex;
+      border-radius: 15px;
+      padding: 0.5rem 1rem;
+      width: 100%;
+      background-color: $light;
+      align-items: center;
+      p {
+        flex: 1;
+        margin-bottom: 0;
+      }
+      button {
+        all: unset;
+      }
+    }
+    .total {
+      padding: 0 1rem;
+      display: flex;
+      justify-content: space-between;
+      p {
+        font-weight: 700;
+      }
+    }
+
+    .products {
+      margin: 2rem 0;
+      border-radius: 10px;
+      width: 100%;
+      padding: 0 1rem;
+      .pr {
+        height: max-content;
+        display: flex;
+        border-radius: 10px;
+        width: 100%;
+        background: #000;
+      }
+      &:hover {
+        .prod {
+          border-radius: 0 20px 20px 0;
+        }
+
+        .action {
+          display: flex;
+          width: 15%;
+          border-radius: 9px;
+          padding: auto 1rem;
+          align-items: center;
+          //   border-radius: ;
+          justify-content: center;
+          background: #000;
+          cursor: pointer;
+          i {
+            color: $light;
+          }
+        }
+      }
+
+      .action {
+        display: none;
+      }
+      .prod {
+        position: relative;
+        background: rgb(231, 231, 231);
+        display: flex;
+        justify-content: flex-end;
+        border-radius: 8px;
+        height: max-content;
+        padding: 1rem;
+        width: 100%;
+        z-index: 2;
+        img {
+          position: absolute;
+          height: 9rem;
+          left: 1rem;
+          top: -2rem;
+          width: 30%;
+        }
+        .content {
+          display: flex;
+          flex-direction: column;
+          .p-name {
+            font-weight: 400;
+            margin: 0;
+          }
+          p {
+            margin: 0;
+          }
+          div {
+            display: flex;
+            justify-content: space-between;
+            p {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .proceed-payment {
+      background-color: $primary;
+      color: $light;
+      width: 100%;
+      border-radius: 0 0 15px 15px;
+
+      //min-height: 1rem;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+
+      padding: 1rem 1rem;
+      .text-center {
+        display: flex;
+        justify-content: center;
+        div {
+          width: 40%;
+          height: 3px;
+          background: $light;
+        }
+      }
+    }
+  }
+  .bottom {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    bottom: 1rem;
+    right: 5rem;
+    margin-right: 3rem;
+    gap: 1rem;
+    .circle {
+      height: 25px;
+      width: 25px;
+      border-radius: 50%;
+      background: #000;
+      margin-right: 2rem;
+    }
+    p {
+      font-weight: bold;
+      font-size: 24px;
+    }
+  }
+}
